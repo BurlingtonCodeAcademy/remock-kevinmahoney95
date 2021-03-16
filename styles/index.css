@@ -37,7 +37,7 @@ h4 {
 }
 
 hr {
-  width: 53%;
+  width: 40%;
   margin-bottom: 4px;
 }
 
@@ -46,6 +46,8 @@ hr {
   flex-direction: row;
   justify-content: center;
   margin: 10px;
+  margin-left: auto;
+  margin-right: auto
 }
 
 #index-top-images img {
@@ -205,15 +207,19 @@ hr {
   margin-right: 20px;
   border: 2px solid gray;
 }
-/*Styling for footer, and flexbox setup for form section*/
+/*Styling for footer, flexbox setup for form section, and grid for social links*/
 #footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   font-family: Helvetica, Sans-Serif;
   background-color: darkgray;
   height: 300px;
   margin-top: 100px;
+}
+
+.form-section {
+  margin-left: 29%
 }
 
 .grid-container {
@@ -228,6 +234,7 @@ hr {
     "note note"
     "note note"
     "note note";
+  
 }
 
 .grid-item-note {
@@ -266,3 +273,17 @@ textarea:focus {
   cursor: pointer;
   background-color: pink;
 }
+
+/*styling for contact links section*/
+#social-links-section {
+  display: grid;
+  width: 350px;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 5%;
+  grid-template-columns: 1fr 1fr;
+ 
+
+}
+
+
