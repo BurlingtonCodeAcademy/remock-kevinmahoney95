@@ -28,7 +28,7 @@ h1 {
 }
 /*Changes color of heading when hovered over*/
 h1:hover {
-  color:royalblue
+  color: royalblue;
 }
 
 h5 {
@@ -71,7 +71,7 @@ hr {
 
 .nav-buttons:hover {
   cursor: pointer;
-  background-color: pink ;
+  background-color: pink;
 }
 
 .article-2 {
@@ -152,7 +152,7 @@ hr {
 }
 
 .form-section {
-  margin-left: 29%
+  margin-left: 29%;
 }
 
 .grid-container {
@@ -167,7 +167,6 @@ hr {
     "note note"
     "note note"
     "note note";
-  
 }
 
 .grid-item-note {
@@ -210,12 +209,15 @@ textarea:focus {
 /*styling for contact links section*/
 #social-links-section {
   display: grid;
-  width: 350px;
+  width: 27%;
   height: 200px;
   margin-top: 60px;
-  margin-left: 5%;
+  margin-left: 3%;
   grid-template-columns: 1fr 1fr;
- 
-
 }
 
+.svg {
+  height: 15px;
+  width: 20px;
+  margin-right: 5px;
+}
