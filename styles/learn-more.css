@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+}
+/*Flex that wraps side bar and articles*/
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: darkslategray;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  color: orangered;
+  font-size: 50px;
+  text-shadow: lightgray 2px 2px;
+}
+/*Changes color of heading when hovered over*/
+h1:hover {
+  color: royalblue;
+}
+
+h5 {
+  text-align: center;
+  color: darkslategrey;
+  font-family: "Roboto", sans-serif;
+}
+
+hr {
+  width: 790px;
+  margin-bottom: 4px;
+}
+
+#articles {
+  width: 550px;
+  margin-left: 25px;
+}
+/*Flex boxes for articles and styling*/
+.article-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  width: 550px;
+  text-align: justify;
+}
+
+.article-1 > img {
+  border: 2px solid darkgray;
+}
+/*Styling for buttons that link to other pages*/
+.nav-buttons {
+  background-color: orangered;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5%;
+  border: 0;
+  box-shadow: lightgray 1px 1px;
+}
+
+.nav-buttons:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+.article-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  width: 550px;
+  margin-top: 10px;
+  text-align: justify;
+}
+/*Styling for entire side bar section*/
+#side-bar {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.side-bar-hr {
+  width: 200px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+/*Flex boxes for blog posts and notes*/
+#blog-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/*Styling for button on Blog Posts*/
+.blog-post-button {
+  margin-top: 20px;
+  background-color: darkslateblue;
+  color: white;
+  border-radius: 5%;
+  box-shadow: lightgray 1px 1px;
+  border: 0;
+  padding: 3px 9px;
+}
+
+.blog-post-button:hover {
+  cursor: pointer;
+  background-color: powderblue;
+}
+/*Styling for Something of Note Section*/
+#note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 200px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.note {
+  margin-bottom: 25px;
+}
+
+.note img {
+  float: left;
+  margin-right: 20px;
+  border: 2px solid gray;
+}
+/*Styling for footer, flexbox setup for form section, and grid for social links*/
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Helvetica, Sans-Serif;
+  background-color: darkgray;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.form-section {
+  margin-left: 29%;
+}
+
+.grid-container {
+  /*Sets up grid for form section*/
+  display: grid;
+  grid-template-rows: 21.33px 21.33px 21.33px 21.33px 21.33px;
+  grid-template-columns: 170px 170px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "name email"
+    "note note"
+    "note note"
+    "note note"
+    "note note";
+}
+
+.grid-item-note {
+  grid-area: note;
+}
+
+.grid-item-name {
+  grid-area: name;
+}
+
+.grid-item-email {
+  grid-area: email;
+}
+
+input:focus {
+  /*changes color of forms if focused*/
+  background-color: powderblue;
+}
+
+textarea:focus {
+  background-color: powderblue;
+}
+
+#send-message {
+  /*Send message button*/
+  background-color: orangered;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5%;
+  border: 0;
+  box-shadow: lightgray 1px 1px;
+  margin-top: 10px;
+}
+
+#send-message:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+/*styling for contact links section*/
+#social-links-section {
+  display: grid;
+  width: 27%;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 3%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.svg {
+  height: 15px;
+  width: 20px;
+  margin-right: 5px;
+}

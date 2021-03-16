@@ -1,0 +1,158 @@
+body {
+  margin:0
+}
+/*Styling and flex for header*/
+#header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: darkslategray;
+  margin-bottom: 40px;
+  width: 700px
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: orangered;
+  font-size: 50px;
+  text-shadow: lightgray 2px 2px;
+}
+
+h1:hover {
+  color:royalblue
+}
+
+p {
+  text-align: justify;
+  color:dimgray
+}
+
+h5 {
+  margin-top: 5px;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%
+}
+/*STyling for large image on page*/
+#img-section {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+}
+
+img {
+  border-radius: 3%;
+  border: 3px solid grey;
+  margin-top: 20px
+}
+
+#main {       /*Flex box to wrap whole article, and sidebar*/
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  width: 700px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#non-footer {              /*flex box for article and image section*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin:0;
+  
+}
+
+/*Styling for footer, flexbox setup for form section, and grid for social links*/
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Helvetica, Sans-Serif;
+  background-color: darkgray;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.form-section {
+  margin-left: 29%
+}
+
+.grid-container {
+  /*Sets up grid for form section*/
+  display: grid;
+  grid-template-rows: 21.33px 21.33px 21.33px 21.33px 21.33px;
+  grid-template-columns: 170px 170px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "name email"
+    "note note"
+    "note note"
+    "note note"
+    "note note";
+  
+}
+
+.grid-item-note {
+  grid-area: note;
+}
+
+.grid-item-name {
+  grid-area: name;
+}
+
+.grid-item-email {
+  grid-area: email;
+}
+
+input:focus {
+  /*changes color of forms if focused*/
+  background-color: powderblue;
+}
+
+textarea:focus {
+  background-color: powderblue;
+}
+
+#send-message {
+  /*Send message button*/
+  background-color: orangered;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5%;
+  border: 0;
+  box-shadow: lightgray 1px 1px;
+  margin-top: 10px;
+}
+
+#send-message:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+/*styling for contact links section*/
+#social-links-section {
+  display: grid;
+  width: 27%;
+  height: 200px;
+  margin-top: 32px;
+  margin-left: 3%;
+  grid-template-columns: 1fr 1fr;
+ 
+
+}
+
+.svg {
+  height: 15px;
+  width: 20px;
+  margin-right: 5px;
+  border: none
+}
+
